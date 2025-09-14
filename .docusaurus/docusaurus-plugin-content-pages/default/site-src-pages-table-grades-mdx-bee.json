@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/table-grades",
+  "source": "@site/src/pages/table-grades.mdx",
+  "title": "Таблицы с баллами по предметам за 1 семестр",
+  "description": "Ссылки на ведомости группы M3204 по каждому предмету за 1 семестр",
+  "frontMatter": {
+    "title": "Таблицы с баллами по предметам за 1 семестр",
+    "description": "Ссылки на ведомости группы M3204 по каждому предмету за 1 семестр"
+  },
+  "unlisted": false
+}

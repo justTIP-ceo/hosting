@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/table-distribution",
+  "source": "@site/src/pages/table-distribution.mdx",
+  "title": "Распределение баллов за 1 семестр",
+  "description": "Разбалловка по предметам и правила оценивания. перевод баллов в оценки за 1 семестр",
+  "frontMatter": {
+    "title": "Распределение баллов за 1 семестр",
+    "description": "Разбалловка по предметам и правила оценивания. перевод баллов в оценки за 1 семестр"
+  },
+  "unlisted": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/",
+  "source": "@site/src/pages/index.mdx",
+  "title": "Полезные ссылки",
+  "description": "Полезные ссылки группы M3116 ИТМО",
+  "frontMatter": {
+    "title": "Полезные ссылки",
+    "description": "Полезные ссылки группы M3116 ИТМО"
+  },
+  "unlisted": false
+}

@@ -1,0 +1,17 @@
+export default {
+  "0058b4c6": [() => import(/* webpackChunkName: "0058b4c6" */ "@generated/docusaurus-plugin-content-docs/default/p/docs-175.json"), "@generated/docusaurus-plugin-content-docs/default/p/docs-175.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/docs-175.json")],
+  "03181aef": [() => import(/* webpackChunkName: "03181aef" */ "@site/src/pages/my-markdown-page.md"), "@site/src/pages/my-markdown-page.md", require.resolveWeak("@site/src/pages/my-markdown-page.md")],
+  "17896441": [() => import(/* webpackChunkName: "17896441" */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
+  "1f391b9e": [() => import(/* webpackChunkName: "1f391b9e" */ "@theme/MDXPage"), "@theme/MDXPage", require.resolveWeak("@theme/MDXPage")],
+  "393be207": [() => import(/* webpackChunkName: "393be207" */ "@site/src/pages/markdown-page.md"), "@site/src/pages/markdown-page.md", require.resolveWeak("@site/src/pages/markdown-page.md")],
+  "5e95c892": [() => import(/* webpackChunkName: "5e95c892" */ "@theme/DocsRoot"), "@theme/DocsRoot", require.resolveWeak("@theme/DocsRoot")],
+  "5e9f5e1a": [() => import(/* webpackChunkName: "5e9f5e1a" */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
+  "730946c0": [() => import(/* webpackChunkName: "730946c0" */ "@site/src/pages/table-distribution.mdx"), "@site/src/pages/table-distribution.mdx", require.resolveWeak("@site/src/pages/table-distribution.mdx")],
+  "a7456010": [() => import(/* webpackChunkName: "a7456010" */ "@generated/docusaurus-plugin-content-pages/default/__plugin.json"), "@generated/docusaurus-plugin-content-pages/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-pages/default/__plugin.json")],
+  "a7bd4aaa": [() => import(/* webpackChunkName: "a7bd4aaa" */ "@theme/DocVersionRoot"), "@theme/DocVersionRoot", require.resolveWeak("@theme/DocVersionRoot")],
+  "a94703ab": [() => import(/* webpackChunkName: "a94703ab" */ "@theme/DocRoot"), "@theme/DocRoot", require.resolveWeak("@theme/DocRoot")],
+  "aba21aa0": [() => import(/* webpackChunkName: "aba21aa0" */ "@generated/docusaurus-plugin-content-docs/default/__plugin.json"), "@generated/docusaurus-plugin-content-docs/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/__plugin.json")],
+  "b7d072db": [() => import(/* webpackChunkName: "b7d072db" */ "@site/docs/hello.mdx"), "@site/docs/hello.mdx", require.resolveWeak("@site/docs/hello.mdx")],
+  "beed27fd": [() => import(/* webpackChunkName: "beed27fd" */ "@site/src/pages/table-grades.mdx"), "@site/src/pages/table-grades.mdx", require.resolveWeak("@site/src/pages/table-grades.mdx")],
+  "e7ce6630": [() => import(/* webpackChunkName: "e7ce6630" */ "@site/src/pages/index.mdx"), "@site/src/pages/index.mdx", require.resolveWeak("@site/src/pages/index.mdx")],
+  "f8551aab": [() => import(/* webpackChunkName: "f8551aab" */ "@site/src/pages/my-react-page.js"), "@site/src/pages/my-react-page.js", require.resolveWeak("@site/src/pages/my-react-page.js")],};
