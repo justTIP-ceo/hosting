@@ -19,10 +19,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://justtip-ceo.github.io/hosting',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/hosting/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
