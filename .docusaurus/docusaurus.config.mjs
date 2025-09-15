@@ -27,8 +27,8 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
+  "url": "https://justtip-ceo.github.io",
+  "baseUrl": "/hosting/",
   "organizationName": "justTIP-ceo",
   "projectName": "hosting",
   "onBrokenLinks": "throw",
