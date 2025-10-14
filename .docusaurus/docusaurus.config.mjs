@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Полезные ссылки",
-  "favicon": "img/mainfavicon.png",
+  "favicon": "img/icons8-книга-32.png",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -69,6 +69,16 @@ export default {
       }
     ]
   ],
+  "scripts": [
+    {
+      "src": "https://mc.yandex.ru/metrika/tag.js",
+      "async": true
+    },
+    {
+      "src": "/js/ym-init.js",
+      "async": true
+    }
+  ],
   "themeConfig": {
     "navbar": {
       "title": "Полезные ссылки",
@@ -115,6 +125,39 @@ export default {
             {
               "label": "BARS",
               "href": "https://bars.itmo.ru"
+            }
+          ]
+        },
+        {
+          "title": "Контакты",
+          "items": [
+            {
+              "html": "<strong>Харченко Татьяна Владимировна</strong> (заместитель декана ФИТИП)"
+            },
+            {
+              "html": "Тел: <a href=\"tel:+79516712916\">+7 951 671 29 16</a>"
+            },
+            {
+              "html": "email: <a href=\"mailto:kharchenko@itmo.ru\">kharchenko@itmo.ru</a> (но я вам его не говорил)"
+            },
+            {
+              "html": "<strong>Деканат ИС</strong>"
+            },
+            {
+              "html": "Тел: <a href=\"tel:+7 812 480 12 90\">+7 812 480 12 90</a>"
+            }
+          ]
+        },
+        {
+          "title": "Отзывы",
+          "items": [
+            {
+              "label": "Оставить отзыв",
+              "to": "/tip"
+            },
+            {
+              "label": "Администрация ООО \"Бнал\"",
+              "href": "https://t.me/t0p_str1ker"
             }
           ]
         }
@@ -356,7 +399,6 @@ export default {
   "customFields": {},
   "plugins": [],
   "themes": [],
-  "scripts": [],
   "headTags": [],
   "stylesheets": [],
   "clientModules": [],

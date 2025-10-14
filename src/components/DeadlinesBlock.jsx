@@ -1,172 +1,141 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { useLocation } from "@docusaurus/router";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from "@docusaurus/Link";
 
 const fetchDeadlines = async (url) => {
   const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error("Failed to fetch deadlines");
-  }
+  if (!response.ok) throw new Error("Failed to fetch deadlines");
   return response.json();
 };
 
 const compareDeadlines = (a, b) => Date.parse(a.time) - Date.parse(b.time);
 
-const formatUnixTimeIntoGCalTime = (unixTimeDeadline) => {
-  const date = new Date(unixTimeDeadline);
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  const seconds = String(date.getSeconds()).padStart(2, '0');
-  const timeZoneOffset = -date.getTimezoneOffset();
-  const sign = timeZoneOffset >= 0 ? '+' : '-';
-  const offsetHours = String(Math.floor(Math.abs(timeZoneOffset) / 60)).padStart(2, '0');
-  const offsetMinutes = String(Math.abs(timeZoneOffset) % 60).padStart(2, '0');
-  return `${year}${month}${day}T${hours}${minutes}${seconds}${sign}${offsetHours}${offsetMinutes}`;
-};
-
 const Deadlines = () => {
   const { siteConfig } = useDocusaurusContext();
-  const baseUrl = siteConfig.baseUrl || '/';
+  const baseUrl = siteConfig.baseUrl || "/";
   const DEADLINES_URL = `${baseUrl}DEADLINES.json`;
-
-  const location = useLocation();
+  const base = useBaseUrl("/");
 
   const [deadlines, setDeadlines] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const fetchAndSetDeadlines = async () => {
-    try {
-      const data = await fetchDeadlines(DEADLINES_URL);
-      const sortedDeadlines = data.deadlines.sort(compareDeadlines);
-      setDeadlines(sortedDeadlines);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchAndSetDeadlines();
+    let mounted = true;
 
-    const updateInterval = () => {
-      const now = new Date();
-      const nextMinute = new Date(now);
-      nextMinute.setSeconds(0, 0);
-      nextMinute.setMinutes(now.getMinutes() + 1);
-      const delay = nextMinute - now;
-
-      const timeoutId = setTimeout(() => {
-        fetchAndSetDeadlines();
-        const intervalId = setInterval(fetchAndSetDeadlines, 60000);
-        return () => clearInterval(intervalId);
-      }, delay);
-
-      return () => clearTimeout(timeoutId);
+    const fetchAndSet = async () => {
+      try {
+        const data = await fetchDeadlines(DEADLINES_URL);
+        if (!mounted) return;
+        setDeadlines(data.deadlines.sort(compareDeadlines));
+      } catch (e) {
+        if (!mounted) return;
+        setError(e.message);
+      } finally {
+        if (mounted) setLoading(false);
+      }
     };
 
-    const cleanup = updateInterval();
+    fetchAndSet();
+
+    const now = new Date();
+    const nextMinute = new Date(now);
+    nextMinute.setSeconds(0, 0);
+    nextMinute.setMinutes(now.getMinutes() + 1);
+    const delay = nextMinute - now;
+
+    const timeoutId = setTimeout(() => {
+      fetchAndSet();
+      const intervalId = setInterval(fetchAndSet, 60000);
+      window.__deadline_interval__ = intervalId;
+    }, delay);
 
     return () => {
-      if (cleanup) cleanup();
+      mounted = false;
+      clearTimeout(timeoutId);
+      const id = window.__deadline_interval__;
+      if (id) clearInterval(id);
     };
   }, [DEADLINES_URL]);
 
-  const formatDeadline = (deadline) => {
-    const ym_counter = siteConfig.customFields?.ymCounter;
-    
-    // A/B experiment
-    const searchParams = new URLSearchParams(location.search);
-    const deadlineStyle = searchParams.get('deadlineStyle');
+  const formatName = (name) =>
+    name
+      .replace(/\[Тест\]|\[тест\]/gi, "📚")
+      .replace(/\[Лекция\]|\[лекция\]/gi, "👨‍🏫")
+      .replace(/\[Защита\]|\[защита\]/gi, "🛡")
+      .replace(/\[Лаба\]|\[лаба\]/gi, "💻")
+      .replace(/\[Дз\]|\[дз\]/gi, "📝")
+      .replace(/\[Опрос\]|\[опрос\]/gi, "🖊️")
+      .replace(/\[Контрольная\]|\[контрольная\]/gi, "🥀")
+      .replace(/\[Типовик\]|\[типовик\]/gi, "📔")
+      .replace(/\[Коллоквиум\]|\[коллоквиум\]/gi, "🗣️");
 
-    const unixTimeDeadline = Date.parse(deadline.time);
-    const unixTimeNow = Date.now();
+  if (loading) return <p>Загрузка дедлайнов...</p>;
+  if (error) return <p>Не удалось загрузить дедлайны: {error}</p>;
 
-    if (unixTimeDeadline <= unixTimeNow) return null;
+  const nowTimestamp = Date.now();
 
-    const delta = unixTimeDeadline - unixTimeNow;
-    const deltaMinutes = delta / 60000;
-    const deltaHours = deltaMinutes / 60;
-    const deltaDays = deltaHours / 24;
-    const deltaHoursSDays = deltaHours - 24 * Math.floor(deltaDays);
-    const deltaMinutesSDays = deltaMinutes - 60 * Math.floor(deltaHours);
+  const upcomingElements = deadlines
+    .filter((d) => Date.parse(d.time) > nowTimestamp)
+    .map((d, idx) => {
+      const unix = Date.parse(d.time);
+      const delta = unix - nowTimestamp;
 
-    let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
-    deadlineName = deadlineName.replace("[Лекция]", "👨‍🏫").replace("[лекция]", "👨‍🏫");
-    deadlineName = deadlineName.replace("[Защита]", "🛡").replace("[защита]", "🛡");
+      const minutes = Math.floor(delta / 60000);
+      const hours = Math.floor(minutes / 60);
+      const days = Math.floor(hours / 24);
+      const hoursRest = hours - 24 * days;
+      const minutesRest = minutes - 60 * hours;
 
-    const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
-    const description = "Дедлайн добавлен с сайта m3204.nawinds.dev";
-    const link = deadline.url;
-    const gcalLink = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
+      const name = formatName(d.name);
+      const isInternal = !!d.to;
+      const resolvedLink = isInternal ? `${base}${d.to}` : d.url || "";
 
-    let text = "";
+      let timeText =
+        days < 1
+          ? `${hoursRest}ч ${minutesRest}м`
+          : days < 3
+          ? `${days} ${days === 1 ? "день" : "дня"} ${hoursRest}ч ${minutesRest}м`
+          : `${days} ${[3, 4].includes(days) ? "дня" : "дней"}`;
 
-    if (link) {
-      if (deadlineStyle === "new") {
-        text += `<b style="position: relative; display: inline-block;">
-          <a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit; position: relative; z-index: 1;"
-            onmouseover="this.parentNode.querySelector('span').style.height='2px'" 
-            onmouseout="this.parentNode.querySelector('span').style.height='1px'"
-            onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a>
-            <span style="position: absolute; bottom: 2px; left: 0; right: 0; height: 1px; background: rgba(157,128,218,0.6); z-index: 0; transition: height 0.1s ease;"></span>
-          </b>`;
-      } else {
-        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);">
-          <a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit;"
-            onmouseover="this.style.opacity='0.8'" 
-            onmouseout="this.style.opacity='1'" 
-            onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a></b>`;
-      }
-    } else {
-      text += `<b style="padding-left: 7px;">${deadlineName}</b>`;
-    }
+      const prettyDate = new Date(unix).toLocaleDateString("ru-RU", {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        weekday: "short",
+      });
 
-    text += ` &#8212; <a href="${gcalLink}" target="_blank" title="Добавить в Google Календарь" style="text-decoration: none; color: inherit;"
-        onmouseover="this.style.opacity='0.8'" 
-        onmouseout="this.style.opacity='1'" 
-        onclick="ym(${ym_counter}, 'reachGoal', 'deadline_time_click'); return true;">`;
-
-    if (deltaDays < 1) {
-      text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
-    } else if (deltaDays < 3) {
-      text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 1 ? "день" : "дня"} ${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
-    } else {
-      text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 3 || Math.floor(deltaDays) === 4 ? "дня" : "дней"}`;
-    }
-
-    const options = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', weekday: 'short' };
-    text += ` (${new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options)}) </a>`;
-
-    return text;
-  };
-
-  if (loading) {
-    return <p>Загрузка дедлайнов...</p>;
-  }
-  if (error) {
-    console.error(error);
-    return <p>Не удалось загрузить дедлайны.</p>;
-  }
+      return (
+        <div key={idx} style={{ marginBottom: 8, lineHeight: "1.6em" }}>
+          {resolvedLink ? (
+            isInternal ? (
+              <Link to={resolvedLink} style={{ textDecoration: "none", color: "inherit" }}>
+                <strong style={{ paddingLeft: 7, borderLeft: "2px solid rgba(157,128,218,0.5)" }}>{name}</strong>
+              </Link>
+            ) : (
+              <a
+                href={resolvedLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit", paddingLeft: 7, borderLeft: "2px solid rgba(157,128,218,0.5)" }}
+              >
+                <strong>{name}</strong>
+              </a>
+            )
+          ) : (
+            <strong style={{ paddingLeft: 7 }}>{name}</strong>
+          )}
+          <span> — {timeText} ({prettyDate})</span>
+        </div>
+      );
+    });
 
   return (
-    <div id="deadlinesBlock" style={{ marginBottom: '20px' }}>
-      <h2>Дедлайны</h2>
-      {deadlines.length === 0 ? (
-        <p>Нет предстоящих дедлайнов.</p>
-      ) : (
-        <p
-          dangerouslySetInnerHTML={{
-            __html: deadlines.map(formatDeadline).filter(Boolean).join('<br>')
-          }}
-          style={{ lineHeight: "1.8em" }}
-        />
-      )}
-      <a href="/deadlines-editing-instructions">Добавить дедлайн</a>
+    <div id="deadlinesBlock" style={{ marginBottom: 20 }}>
+      <h2>Предстоящие дедлайны</h2>
+      {upcomingElements.length ? upcomingElements : <p>Нет предстоящих дедлайнов.</p>}
     </div>
   );
 };

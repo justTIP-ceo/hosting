@@ -1,8 +1,113 @@
 {
   "deadlines": [
     {
-      "name": "[консультация] ЭВМ (ауд. 2403)",
-      "time": "21 Jun 2026 13:30:00 GMT+3"
+      "name": "[дз] Дискретка: ДЗ №1",
+      "time": "23 Sep 2025 23:55:00 GMT+3",
+      "url": "https://discrete-math-practics.yonote.ru/share/96032627-ed37-437a-9a44-14275098362a/doc/dz-1-tm-srok-23-sentyabrya-2355-4KrgFIqeB3"
+    },
+    {
+      "name": "[лаба] Алгоритмы: лабораторная №1",
+      "time": "20 Sep 2025 23:59:00 GMT+3",
+      "url": "https://sort-me.org/contest/454"
+    },
+    {
+      "name": "[защита] ИСРПО: лабораторная работа по Git №1",
+      "time": "30 Sep 2025 09:50:00 GMT+3",
+      "url": "https://github.com/RuslanKoynov/SDT_practice/blob/main/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%BF%D0%BE%20Git.docx"
+    },
+    {
+      "name": "[дз] Линал: ДЗ по матрицам",
+      "time": "20 Sep 2025 11:30:00 GMT+3",
+      "url": "https://t.me/IS16Y29/1871"
+    },
+    {
+      "name": "[опрос] Дискретка: опросник по лекциям №00 и №01",
+      "time": "18 Sep 2025 17:10:00 GMT+3",
+      "url": "https://drive.google.com/drive/u/0/folders/1Dpl50QXRLa2NquLxVBF_H8aakhYGxGxq"
+    },
+    {
+      "name": "[опрос] Дискретка: опросник по лекциям №02 и №03",
+      "time": "02 Oct 2025 17:10:00 GMT+3",
+      "url": "https://drive.google.com/drive/u/0/folders/1Dpl50QXRLa2NquLxVBF_H8aakhYGxGxq"
+    },
+    {
+      "name": "[контрольная] Дискретка: контрольная работа",
+      "time": "25 Sep 2025 17:10:00 GMT+3"
+    },
+    {
+      "name": "[дз] Матан: дз по пределам",
+      "time": "25 Sep 2025 18:50:00 GMT+3",
+      "url": "https://t.me/IS16Y29/2362"
+    },
+    {
+      "name": "[тест] Тест по алгоритмам: Асимптотика и сортировка вставками",
+      "time": "26 Sep 2025 11:30:00 GMT+3",
+      "url": "https://algoitmem.yonote.ru/share/760e33ef-cedc-46b7-ab35-ed71fecaa0c7"
+    },
+    {
+      "name": "[Лаба] Лаба по алгоритмам №2",
+      "time": "11 Oct 2025 23:59:00 GMT+3",
+      "url": "https://sort-me.org/contest/456/2477"
+    },
+    {
+      "name": "[лаба] ОП: Лаба №1 – Шаблонизатор",
+      "time": "06 Oct 2025 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/wNoghO0O"
+    },
+    {
+      "name": "[типовик] Дискретка: Типовик №1",
+      "time": "21 Oct 2025 23:55:00 GMT+3",
+      "url": "https://drive.google.com/drive/folders/1bAGHdyHze9tcMoQBWfiCQH3tSqAieo1O?hl=ru"
+    },
+    {
+      "name": "[дз] Дискретка: ДЗ №2",
+      "time": "14 Oct 2025 23:55:00 GMT+3",
+      "url": "https://discrete-math-practics.yonote.ru/share/6ee5634f-3b98-4cb5-a5e9-e8915486968d/doc/dz-2-bo-srok-do-14102025-2355-tx43681YF8"
+    },
+    {
+      "name": "[дз] Матан: ДЗ №2 – делаем в зеленых тонких тетрадках",
+      "time": "2 Oct 2025 20:20:00 GMT+3",
+      "url": "https://t.me/IS16Y29/2836"
+    },
+    {
+      "name": "[Контрольная] Линал: Самостоятельная по матрицам(пишем всю пару)",
+      "time": "4 Oct 2025 20:20:00 GMT+3",
+      "url": "https://t.me/IS16Y29/2901"
+    },
+    {
+      "name": "[дз] Матан: ДЗ №3",
+      "time": "9 Oct 2025 18:50:00 GMT+3",
+      "url": "https://t.me/IS16Y29/2954"
+    },
+    {
+      "name": "[опрос] [НА ПАРЕ] Дискретка: опросник по лекциям №04 и №05",
+      "time": "9 Oct 2025 17:10:00 GMT+3",
+      "url": "https://drive.google.com/drive/u/0/folders/1Dpl50QXRLa2NquLxVBF_H8aakhYGxGxq"
+    },
+    {
+      "name": "[защита] ИСРПО: лабораторная работа №2(документирование)",
+      "time": "14 Oct 2025 09:50:00 GMT+3",
+      "url": "https://github.com/RuslanKoynov/SDT_practice/blob/main/Документирование.%20Лабораторная%20работа%20№2.docx"
+    },
+    {
+      "name": "[тест] Алгосы: Внезапный тест по сортировкам",
+      "time": "10 Oct 2025 11:30:00 GMT+3",
+      "url": "https://drive.google.com/drive/folders/1LFwam2Ufbo8NYc9sWXU8EleXlcr7rHdX"
+    },
+    {
+      "name": "[лаба] ОП: Лабортаорная работа №2",
+      "time": "20 Oct 2025 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/tGGgRcuy"
+    },
+    {
+      "name": "[коллоквиум] Дискретка: Запись на досрочный коллоквиум и типовик(дата – 17 окт с 13:30 - 17:00 ауд.1428)",
+      "time": "16 Oct 2025 23:59:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/1LOM0vigRgWBowc94ee3aUSRlH9BHCOIt5HNE92gRf1M/edit?gid=0#gid=0"
+    },
+    {
+      "name": "[типовик] Матан: Типовик №1(тема: пределы и непрерывность)",
+      "time": "8 Nov 2025 23:59:00 GMT+3",
+      "to": "typicalcalculation"
     }
   ]
 }

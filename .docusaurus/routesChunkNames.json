@@ -1,104 +1,82 @@
 {
-  "/hosting/__docusaurus/debug-f05": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    }
-  },
-  "/hosting/__docusaurus/debug/config-f7e": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    }
-  },
-  "/hosting/__docusaurus/debug/content-e7f": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    },
-    "__props": "__props---hosting-docusaurus-debug-content-81-f-197"
-  },
-  "/hosting/__docusaurus/debug/globalData-43c": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    }
-  },
-  "/hosting/__docusaurus/debug/metadata-5e7": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    }
-  },
-  "/hosting/__docusaurus/debug/registry-998": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    }
-  },
-  "/hosting/__docusaurus/debug/routes-bcd": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---hosting-docusaurus-debugb-38-d3b"
-    }
-  },
   "/hosting/markdown-page-52e": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---hosting-markdown-pagea-74-06d"
+      "plugin": "a7456010"
     },
-    "content": "content---hosting-markdown-page-393-530"
+    "content": "393be207"
   },
   "/hosting/my-markdown-page-16a": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---hosting-markdown-pagea-74-06d"
+      "plugin": "a7456010"
     },
-    "content": "content---hosting-my-markdown-page-031-0ad"
+    "content": "03181aef"
   },
   "/hosting/my-react-page-e2d": {
-    "__comp": "__comp---site-src-pages-my-react-page-jsf-85-e77",
+    "__comp": "f8551aab",
     "__context": {
-      "plugin": "plugin---hosting-markdown-pagea-74-06d"
+      "plugin": "a7456010"
     },
-    "config": "config---hosting-my-react-page-5-e-9-cd3"
+    "config": "5e9f5e1a"
+  },
+  "/hosting/past-deadlines-088": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "92ec1c44"
   },
   "/hosting/table-distribution-71e": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---hosting-markdown-pagea-74-06d"
+      "plugin": "a7456010"
     },
-    "content": "content---hosting-table-distribution-730-d1a"
+    "content": "730946c0"
   },
   "/hosting/table-grades-536": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---hosting-markdown-pagea-74-06d"
+      "plugin": "a7456010"
     },
-    "content": "content---hosting-table-gradesbee-285"
+    "content": "beed27fd"
+  },
+  "/hosting/tip-9bd": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "268289b4"
+  },
+  "/hosting/typicalcalculation-000": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "839975db"
   },
   "/hosting/docs-203": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---hosting-docsaba-50e"
+      "plugin": "aba21aa0"
     }
   },
   "/hosting/docs-27c": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---hosting-docsf-9-c-5b6"
+    "__comp": "a7bd4aaa",
+    "__props": "f9c0a64c"
   },
   "/hosting/docs-f7a": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/hosting/docs/hello-08d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hosting-docs-hellob-7-d-afb"
+    "__comp": "17896441",
+    "content": "b7d072db"
   },
   "/hosting/-d85": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---hosting-markdown-pagea-74-06d"
+      "plugin": "a7456010"
     },
-    "content": "content---hosting-e-7-c-08c"
+    "content": "e7ce6630"
   }
 }

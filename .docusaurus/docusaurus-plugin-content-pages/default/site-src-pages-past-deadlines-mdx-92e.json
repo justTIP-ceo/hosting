@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/hosting/past-deadlines",
+  "source": "@site/src/pages/past-deadlines.mdx",
+  "title": "Прошедшие дедлайны группы М3116",
+  "description": "Прошедшие дедлайный 1-го семестра",
+  "frontMatter": {
+    "title": "Прошедшие дедлайны группы М3116",
+    "description": "Прошедшие дедлайный 1-го семестра"
+  },
+  "unlisted": false
+}

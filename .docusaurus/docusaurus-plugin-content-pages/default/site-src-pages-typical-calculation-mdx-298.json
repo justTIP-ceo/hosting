@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/hosting/typicalCalculation",
+  "source": "@site/src/pages/typicalCalculation.mdx",
+  "title": "Типовики",
+  "description": "Типовикиы",
+  "frontMatter": {
+    "title": "Типовики",
+    "description": "Типовикиы"
+  },
+  "unlisted": false
+}

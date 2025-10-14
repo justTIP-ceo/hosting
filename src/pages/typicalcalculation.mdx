@@ -1,0 +1,78 @@
+---
+title: Типовики
+description: Типовики
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import BackButton from '@site/src/components/BackButton';
+
+<BackButton title="Назад" to="/" />
+
+# Типовики по МатАну
+
+<style>{`
+  .pdf-list { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
+
+  /* Ссылка: показываем только текстовую область как интерактивную */
+  .pdf-link {
+    display: inline-block;        /* важное: inline-block чтобы псевдоэлемент занимал ширину текста */
+    padding: 0;                   /* убираем лишние отступы */
+    margin: 0;
+    font-size: 1.9em;
+    color: rgb(66, 165, 245);     /* голубой по умолчанию */
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1;               /* минимизируем высоту bounding-box */
+    transition: color .15s ease;
+    position: relative;           /* для ::after */
+    vertical-align: middle;
+  }
+
+  /* Псевдо-подчёркивание: изначально невидимо (scaleX(0)) */
+  .pdf-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;                 /* чуть ниже текста */
+    height: 2px;
+    background: rgba(66,165,245,0.95);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform .18s ease;
+    pointer-events: none;         /* чтобы линия не мешала наведению */
+  }
+
+  /* При наведении на сам элемент — рисуем линию и чуть осветляем цвет */
+  .pdf-link:hover {
+    color: rgb(30, 136, 229);
+  }
+  .pdf-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Если нужен hover-эффект только при наведении строго на текст (а не на контейнер),
+     убедись что родитель не даёт padding'ов и не растягивает ссылку. */
+`}</style>
+
+<div className="pdf-list">
+  <a
+    className="pdf-link"
+    href={useBaseUrl('/pdf/TypicalCalculationDifficult.pdf')}
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Открыть Сложный"
+  >
+    📘 Сложный
+  </a>
+
+  <a
+    className="pdf-link"
+    href={useBaseUrl('/pdf/TypicalCalculationEasy.pdf')}
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Открыть Легкий"
+  >
+    📗 Легкий
+  </a>
+</div>

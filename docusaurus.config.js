@@ -8,10 +8,14 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Полезные ссылки',
-  favicon: 'img/mainfavicon.png',
+  favicon: 'img/icons8-книга-32.png',
+
+  
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -74,6 +78,17 @@ const config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: "https://mc.yandex.ru/metrika/tag.js",
+      async: true,
+    },
+    {
+      src: "/js/ym-init.js",
+      async: true,
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -96,31 +111,66 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Сайты ИТМО',
-            items: [
-                {
-                    label: 'my.itmo',
-                    href: 'https://my.itmo.ru',
-                },
-                {
-                    label: 'ИСУ',
-                    href: 'https://isu.ifmo.ru',
-                },
-                {
-                    label: 'Запись на физру',
-                    href: 'https://my.itmo.ru/sport/sign',
-                },
-                {
-                    label: 'Бронирования',
-                    href: 'https://isu.ifmo.ru/pls/apex/f?p=2431:4',
-                },
-                {
-                    label: 'BARS',
-                    href: 'https://bars.itmo.ru',
-                },
-            ],
-        },
+            {
+                title: 'Сайты ИТМО',
+                items: [
+                    {
+                        label: 'my.itmo',
+                        href: 'https://my.itmo.ru',
+                    },
+                    {
+                        label: 'ИСУ',
+                        href: 'https://isu.ifmo.ru',
+                    },
+                    {
+                        label: 'Запись на физру',
+                        href: 'https://my.itmo.ru/sport/sign',
+                    },
+                    {
+                        label: 'Бронирования',
+                        href: 'https://isu.ifmo.ru/pls/apex/f?p=2431:4',
+                    },
+                    {
+                        label: 'BARS',
+                        href: 'https://bars.itmo.ru',
+                    },
+                ],
+            },
+            {
+                title: 'Контакты',
+                items: [
+                    {
+                        html: '<strong>Харченко Татьяна Владимировна</strong> (заместитель декана ФИТИП)'
+                    },
+                    {
+                        html: 'Тел: <a href="tel:+79516712916">+7 951 671 29 16</a>'
+                    },
+                    {
+
+                        html: 'email: <a href="mailto:kharchenko@itmo.ru">kharchenko@itmo.ru</a> (но я вам его не говорил)'
+
+                    },
+                    {
+                        html: '<strong>Деканат ИС</strong>'
+                    },
+                    {
+                        html: 'Тел: <a href="tel:+7 812 480 12 90">+7 812 480 12 90</a>'
+                    },
+                ],
+            },
+            {
+                title: 'Отзывы',
+                items: [
+                    {
+                        label: 'Оставить отзыв',
+                        to: '/tip',
+                    },
+                    {
+                        label: 'Администрация ООО "Бнал"',
+                        href: 'https://t.me/t0p_str1ker',
+                    }
+                ],
+            },
         ],
       },
       prism: {

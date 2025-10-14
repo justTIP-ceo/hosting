@@ -28,3 +28,39 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Все ссылки tel: */
+a[href^="tel:"] {
+  color: inherit;       /* наследует цвет от родителя */
+  text-decoration: none; /* убираем подчёркивание, если не нужно */
+}
+
+/* При наведении */
+a[href^="tel:"]:hover {
+  color: green;         /* зелёный только при наведении */
+  text-decoration: underline; /* можно добавить подчёркивание для наглядности */
+}
+
+a[href^="mailto:"] {
+  color: inherit;       /* наследует цвет от родителя */
+  text-decoration: none; /* убираем подчёркивание, если не нужно */
+}
+
+a[href^="mailto:"]:hover {
+  color: green;         /* зелёный только при наведении */
+  text-decoration: underline; /* можно добавить подчёркивание для наглядности */
+}
+
+.custom-title {
+  display: block;       /* чтобы был как заголовок */
+  font-size: 1.2rem;    /* размер чуть больше */
+  font-weight: bold;    /* жирный */
+  margin-bottom: 8px;   /* отступ вниз */
+  color: #222;          /* тёмный цвет */
+  text-transform: uppercase; /* (опционально) ЗАГЛАВНЫМИ */
+}
+
+.big-text {
+  font-size: 25px;
+  line-height: 1.6;
+}

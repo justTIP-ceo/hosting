@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/hosting/__docusaurus/debug',
-    component: ComponentCreator('/hosting/__docusaurus/debug', 'f05'),
-    exact: true
-  },
-  {
-    path: '/hosting/__docusaurus/debug/config',
-    component: ComponentCreator('/hosting/__docusaurus/debug/config', 'f7e'),
-    exact: true
-  },
-  {
-    path: '/hosting/__docusaurus/debug/content',
-    component: ComponentCreator('/hosting/__docusaurus/debug/content', 'e7f'),
-    exact: true
-  },
-  {
-    path: '/hosting/__docusaurus/debug/globalData',
-    component: ComponentCreator('/hosting/__docusaurus/debug/globalData', '43c'),
-    exact: true
-  },
-  {
-    path: '/hosting/__docusaurus/debug/metadata',
-    component: ComponentCreator('/hosting/__docusaurus/debug/metadata', '5e7'),
-    exact: true
-  },
-  {
-    path: '/hosting/__docusaurus/debug/registry',
-    component: ComponentCreator('/hosting/__docusaurus/debug/registry', '998'),
-    exact: true
-  },
-  {
-    path: '/hosting/__docusaurus/debug/routes',
-    component: ComponentCreator('/hosting/__docusaurus/debug/routes', 'bcd'),
-    exact: true
-  },
-  {
     path: '/hosting/markdown-page',
     component: ComponentCreator('/hosting/markdown-page', '52e'),
     exact: true
@@ -53,6 +18,11 @@ export default [
     exact: true
   },
   {
+    path: '/hosting/past-deadlines',
+    component: ComponentCreator('/hosting/past-deadlines', '088'),
+    exact: true
+  },
+  {
     path: '/hosting/table-distribution',
     component: ComponentCreator('/hosting/table-distribution', '71e'),
     exact: true
@@ -60,6 +30,16 @@ export default [
   {
     path: '/hosting/table-grades',
     component: ComponentCreator('/hosting/table-grades', '536'),
+    exact: true
+  },
+  {
+    path: '/hosting/tip',
+    component: ComponentCreator('/hosting/tip', '9bd'),
+    exact: true
+  },
+  {
+    path: '/hosting/typicalcalculation',
+    component: ComponentCreator('/hosting/typicalcalculation', '000'),
     exact: true
   },
   {
