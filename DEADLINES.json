@@ -102,20 +102,12 @@
     {
       "name": "[коллоквиум] Дискретка: Запись на досрочный коллоквиум и типовик(дата – 17 окт с 13:30 - 17:00 ауд.1428)",
       "time": "16 Oct 2025 23:59:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/1LOM0vigRgWBowc94ee3aUSRlH9BHCOIt5HNE92gRf1M/edit?gid=0#gid=0"
+      "url": "https://docs.google.com/sprљ†eadsheets/d/1LOM0vigRgWBowc94ee3aUSRlH9BHCOIt5HNE92gRf1M/edit?gid=0#gid=0"
     },
     {
       "name": "[типовик] Матан: Типовик №1(тема: пределы и непрерывность)",
       "time": "8 Nov 2025 23:59:00 GMT+3",
       "to": "typicalcalculation"
-    },
-    {
-      "name": "[контрольная] Дискретка: контрольная работа №2",
-      "time": "16 Oct 2025 17:10:00 GMT+3"
-    },
-    {
-      "name": "[защита] Дискретная математика: защита типовика №1",
-      "time": "23 Oct 2025 17:10:00 GMT+3"
     }
   ]
 }
