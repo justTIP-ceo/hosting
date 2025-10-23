@@ -131,6 +131,11 @@
       "name": "[тест] ИСРПО: рубежка",
       "time": "25 Oct 2025 23:59:00 GMT+3",
       "url": "https://t.me/KoynovBot"
+    },
+    {
+      "name": "[лаба] Алгосы: лабораторная №3",
+      "time": "30 Oct 2025 23:59:00 GMT+3",
+      "url": "https://sort-me.org/contest/458"
     }
   ]
 }
