@@ -26,7 +26,7 @@
       "url": "/hosting/pdf/RepeatingLinAl.pdf"
     },
     {
-      "name": "[лаба] Алгоритмы и структуры данных: Лабораторная №1",
+      "name": "[лаба] Алгоритмы: Лаба №1",
       "time": "27 Feb 2026 23:59:00 GMT+3",
       "url": "https://sort-me.org/contest/548"
     },
@@ -44,6 +44,26 @@
       "name": "[тест] Дискретная математика: Опросник №2 (ауд. 2240)",
       "time": "25 Feb 2026 13:30:00 GMT+3",
       "url": "https://docs.google.com/spreadsheets/d/1N3TClST0QPqCT5nwTIuIxdwvjBnXUzNfAKuv07ciJv4/edit?gid=1654496592#gid=1654496592"
+    },
+    {
+      "name": "[лаба] АрхЭВМ: Лаба №2 Не обязательно сдавать прямо в этот день, но желательно(ауд. 2313)",
+      "time": "03 Mar 2026 11:30:00 GMT+3",
+      "url": "https://evm.goodbroch.ru/labs-1/lab-2"
+    },
+    {
+      "name": "[типовик] МатАн: Типовик – Интегралы",
+      "time": "18 Mar 2026 23:59:00 GMT+3",
+      "url": "/hosting/pdf/2sem_MatAn/Typical_Calculation1-{CPC_Integrals}.pdf"
+    },
+    {
+      "name": "[лаба] Программирование на С++: Лаба №1 – Circular Buffer(0 дедлайн)",
+      "time": "09 Mar 2026 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/um8x18cZ"
+    },
+    {
+      "name": "[дз] Математический анализ: ДЗ №2(не на баллы)(ауд. 1404)",
+      "time": "03 Mar 2026 13:30:00 GMT+3",
+      "url": "/hosting/pdf/2sem_MatAn/HW2-{Simple_Frac_Method}.pdf"
     }
   ]
 }

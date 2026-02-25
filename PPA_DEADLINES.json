@@ -1,39 +1,54 @@
 {
   "deadlines": [
     {
-      "name": "[консультация] Математический анализ: Консультация(ауд. 2226)",
-      "time": "18 Feb 2026 11:30:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] Математический анализ: ПЕРВОЕ ЗАСЕДАНИЕ(ауд. 1316)",
+      "time": "03 Mar 2026 15:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     },
     {
-      "name": "[консультация] Основы Программирования: Консультация(ауд. 2138)",
-      "time": "13 Feb 2026 18:50:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] Математический анализ: ВТОРОЕ ЗАСЕДАНИЕ(ауд. 2337)",
+      "time": "14 Mar 2026 15:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     },
     {
-      "name": "[консультация] Основы Программирования: Консультация(дистант)",
-      "time": "16 Feb 2026 21:00:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] Линейная Алгебра: ПЕРВОЕ ЗАСЕДАНИЕ(ауд. 1316)",
+      "time": "03 Mar 2026 15:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     },
     {
-      "name": "[Экзамен] Дискретная математика: Экзамен(ауд. 2337)",
-      "time": "24 Feb 2026 13:30:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] Линейная Алгебра: ВТОРОЕ ЗАСЕДАНИЕ(ауд. 2337)",
+      "time": "14 Mar 2026 15:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     },
     {
-      "name": "[Экзамен] Алгоритмы и структуры данных: Экзамен(ауд. 2337) – Для допуска нужно сдать теормин практику",
-      "time": "24 Feb 2026 13:30:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] ИСРПО: ПЕРВОЕ ЗАСЕДАНИЕ(ауд. 2137)",
+      "time": "02 Mar 2026 17:10:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     },
     {
-      "name": "[Экзамен] Основы Программирования: Экзамен(ауд. 1405)",
-      "time": "21 Feb 2026 15:30:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] ИСРПО: ВТОРОЕ ЗАСЕДАНИЕ(ауд. 2342)",
+      "time": "05 Mar 2026 18:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     },
     {
-      "name": "[Экзамен] Основы Программирования: Экзамен(ауд. 1405)",
-      "time": "21 Feb 2026 18:00:00 GMT+3",
-      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=0#gid=0"
+      "name": "[Экзамен] Дискретная математика: ПЕРВОЕ ЗАСЕДАНИЕ(сслыка на zoom в таблице)",
+      "time": "10 Mar 2026 19:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
+    },
+    {
+      "name": "[Экзамен] Дискретная математика: ВТОРОЕ ЗАСЕДАНИЕ(сслыка на zoom в таблице)",
+      "time": "12 Mar 2026 19:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
+    },
+    {
+      "name": "[Экзамен] Алгоритмы: ВТОРОЕ ЗАСЕДАНИЕ(сслыка на zoom в таблице)",
+      "time": "12 Mar 2026 19:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
+    },
+    {
+      "name": "[Экзамен] Алгоритмы: ПЕРВОЕ ЗАСЕДАНИЕ(сслыка на zoom в таблице)",
+      "time": "10 Mar 2026 19:00:00 GMT+3",
+      "url": "https://docs.google.com/spreadsheets/d/124dp0YjojZeuzb8ATXLpX5or-zS4WxWdegtaea54CSE/edit?gid=390578794#gid=390578794"
     }
   ]
 }
