@@ -118,6 +118,26 @@
       "name": "[типовик] Дискретка: Типовой расчет №3",
       "time": "24 Mar 2026 23:59:00 GMT+3",
       "url": "/hosting/pdf/2sem_DM/TypicalCalculation_DM_3.pdf"
+    },
+    {
+      "name": "[коллоквиум] Дискретка: Коллоквиум №3(ауд. 1419)",
+      "time": "25 Mar 2026 11:30:00 GMT+3",
+      "url": "https://dm-aisd.yonote.ru/share/itmo_dm_colloquium_3"
+    },
+    {
+      "name": "[типовик] Матан: Типовик № 2(желательно сделать к указанному времени, но не обязательно, ауд. 2335)",
+      "time": "25 Mar 2026 17:10:00 GMT+3",
+      "url": "/hosting/pdf/2sem_MatAn/Typical_Calculation1-{CPC_Integrals_part2}.pdf"
+    },
+    {
+      "name": "[типовик] Матан: Типовик № 3(желательно сделать к указанному времени, но не обязательно, ауд. 2335)",
+      "time": "22 Apr 2026 17:10:00 GMT+3",
+      "url": "/hosting/pdf/2sem_MatAn/TypicalCalculation_3_MatAn.pdf"
+    },
+    {
+      "name": "[лаба] ЭВМ: Лаба №4(ауд. 2313)",
+      "time": "24 Mar 2026 15:30:00 GMT+3",
+      "url": "https://evm.goodbroch.ru/labs-1/lab-4"
     }
   ]
 }
